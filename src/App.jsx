@@ -9,7 +9,7 @@ import SignUp from "./pages/SignUp";
 const App = () => {
   return (
     <OrderProvider>
-      <Router>
+      <Router basename="/potest">
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/menu" element={<MenuPage />} />
