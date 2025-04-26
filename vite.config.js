@@ -2,18 +2,14 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import fs from "fs";
 import path from "path";
-import { VitePluginStaticCopy } from "vite-plugin-static-copy";
+import copy from "vite-plugin-copy";
 
+// Оновлена конфігурація Vite
 export default defineConfig({
   plugins: [
     react(),
-    VitePluginStaticCopy({
-      targets: [
-        {
-          src: "certs/*",
-          dest: "certs",
-        },
-      ],
+    copy({
+      targets: [{ src: "certs/*", dest: "certs" }],
     }),
   ],
   server: {
