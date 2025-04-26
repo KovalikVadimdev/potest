@@ -13,7 +13,6 @@ const MainPage = () => {
   return (
     <>
       <header className="header">
-        <h1>HELLO WORLD</h1>
         <Header />
       </header>
 
